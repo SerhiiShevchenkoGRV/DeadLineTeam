@@ -59,10 +59,19 @@ body .ac-header .ac-trigger {
     transition: background 0.3s ease;
 }
 
-/* Стилі для SVG-стрілки */
+/* Стилі для стрілки */
+body .arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(250, 250, 250, 0.4);
+    border-radius: 100%;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
 body .ac-trigger .ac-icon {
-    width: 24px;
-    height: 24px;
     transition: transform 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.3); 
     border-radius: 50%; 
