@@ -1,6 +1,3 @@
-import Accordion from 'accordion-js';
-import '../node_modules/accordion-js/dist/accordion';
-
 import './js/about-me';
 import './js/benefits';
 import './js/covers';
