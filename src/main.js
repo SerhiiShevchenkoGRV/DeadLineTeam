@@ -10,4 +10,3 @@ import './js/hero';
 import './js/projects';
 import './js/reviews';
 import './js/work-together';
-
