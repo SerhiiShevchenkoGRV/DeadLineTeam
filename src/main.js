@@ -1,6 +1,3 @@
-import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
-
 import './js/about-me';
 import './js/benefits';
 import './js/covers';
