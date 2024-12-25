@@ -1,3 +1,4 @@
+/* Базові стилі для мобільних пристроїв */
 .container {
     min-width: 320px;
     margin: 0 auto;
@@ -7,7 +8,7 @@
     background-color: #1c1d20;
     margin: 0 auto;
     padding: 164px 36px;
-    max-width: 1440px; 
+    max-width: 100%;
     box-sizing: border-box; 
 }
 
@@ -29,19 +30,18 @@
     margin-bottom: 32px;
 }
 
-
-.ac {
+body .ac {
     background: #1e1e22;
     border-top: 1px solid #444;
     border-bottom: 1px solid #444;
     overflow: hidden;
-    flex: 1 1 calc(50% - 2rem); /* Ширина блоку: 50% мінус відступи */
+    width: 100%; /* Для мобільних ширина 100% */
     box-sizing: border-box;
     transition: all 0.3s ease;
 }
 
 /* Стилі заголовків аккордеона */
-.ac-header .ac-trigger {
+body .ac-header .ac-trigger {
     font-size: 1rem;
     font-weight: bold;
     padding: 1.2rem;
@@ -55,13 +55,10 @@
     justify-content: space-between;
     align-items: center;
     transition: background 0.3s ease;
-
 }
 
-
-
 /* Стилі для SVG-стрілки */
-.ac-trigger .ac-icon {
+body .ac-trigger .ac-icon {
     width: 24px;
     height: 24px;
     transition: transform 0.3s ease;
@@ -70,46 +67,46 @@
     flex-shrink: 0; 
 }
 
-.ac.is-active .ac-trigger .ac-icon {
+body .ac.is-active .ac-trigger .ac-icon {
     transform: rotate(180deg); 
 }
-.ac-trigger {
+body .ac-trigger {
     border: none;
 }
 
 /* Панель аккордеона */
-.ac-panel {
+body .ac-panel {
     padding: 0 1rem;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.3s ease;
 }
 
-.ac.is-active .ac-panel {
+body .ac.is-active .ac-panel {
     padding: 1rem;
     min-height: 11rem;
     overflow: visible;
 }
 
-.ac-panel p {
+body .ac-panel p {
     margin: 0;
     line-height: 1.6;
 }
 
-.ac-text{
+body .ac-text {
     font-family: 'Inter Tight', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    color:#FAFAFA99;
+    color: #FAFAFA99;
 }
 
 /* Стилі активного елемента */
-.ac.is-active {
+body.ac.is-active {
     border-color: #444;
 }
 
-/* Адаптивні стилі */
-@media (max-width: 768px) {
+/* Стили для планшетів */
+@media (min-width: 768px) {
     .accordion-container {
         display: block;
     }
@@ -121,14 +118,11 @@
     .ac-header .ac-trigger {
         font-size: 0.9rem;
     }
-
-
 }
 
+/* Стили для десктопів */
 @media (min-width: 1440px) {
-
-      /* Контейнер аккордеона */
-      .accordion-container {
+    .accordion-container {
         display: flex;
         flex-wrap: wrap; 
         justify-content: space-between; 
@@ -137,30 +131,28 @@
     .container {
         padding: 0 0px;
     }
+
     .faq-title {
         font-size: 16px;
     }
-    
 
-
+    .ac {
+        flex: 1 1 calc(50% - 2rem); /* Ширина блоку: 50% мінус відступи */
+    }
 
     /* Порядок елементів аккордеона */
-    .ac:nth-child(1) { order: 1; } /* What programming languages are most often used in your project? */
-    .ac:nth-child(4) { order: 2; } /* How can I contact you? */
-    .ac:nth-child(2) { order: 3; } /* What are the deadlines for the project? */
-    .ac:nth-child(5) { order: 4; } /* Do you provide advice or support? */
-    .ac:nth-child(3) { order: 5; } /* What payment methods do you accept? */
-    .ac:nth-child(6) { order: 6; } /* What does the process of developing a software product look like from idea to implementation? */
+    .ac:nth-child(1) { order: 1; }
+    .ac:nth-child(4) { order: 2; }
+    .ac:nth-child(2) { order: 3; }
+    .ac:nth-child(5) { order: 4; }
+    .ac:nth-child(3) { order: 5; }
+    .ac:nth-child(6) { order: 6; }
 
-    .ac:nth-child(1),.ac:nth-child(2),  .ac:nth-child(3) {
+    .ac:nth-child(1), .ac:nth-child(2), .ac:nth-child(3) {
         border-right: 1px solid #444;
     }
 
-    .ac:nth-child(4),.ac:nth-child(5),  .ac:nth-child(6) {
+    .ac:nth-child(4), .ac:nth-child(5), .ac:nth-child(6) {
         border-left: 1px solid #444;
     }
-  
-
-
 }
-
