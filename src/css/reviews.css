@@ -1,15 +1,33 @@
 .reviews-section {
   /* margin: 0 auto; */
+
+  display: flex;
+  justify-content: center;
   background-color: #1c1d20;
 }
 
-/* Контейнер секції відгуків */
 .reviews-container {
-  max-width: 1440px;
-  height: 500px;
+  width: 343px;
+  height: 442px;
   position: relative;
   /* background-color: #1c1d20; */
-  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-container {
+    margin-bottom: 96px;
+    width: 704px;
+    height: 458px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-container {
+    margin-bottom: 164px;
+    width: 1376px;
+    height: 458px;
+  }
 }
 
 /* Стилі для заголовка секції */
