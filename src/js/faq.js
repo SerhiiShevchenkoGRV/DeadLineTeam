@@ -2,26 +2,7 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Default options
-  new Accordion('.accordion-container');
-
-  // User options
-  new Accordion('.container-second', {
-    duration: 500,
-    showMultiple: true,
-    onToggle: function (currentElement, allElements) {
-      console.log(currentElement);
-    },
-  });
-
-  // Define several accordions with the same options
-  new Accordion(['.accordion-container', '.container-second']);
-
-  // Detach events
-  const accordion = new Accordion('.accordion-container');
-  accordion.detachEvents();
-
-  const accordionInstance = new Accordion('.accordion-container', {
+  new Accordion('.accordion-container', {
     duration: 300,
     showMultiple: false,
     elementClass: 'ac',
@@ -56,8 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  // Сховати псевдоелемент ::after
+  //pseudo-element ::after
   const style = document.createElement('style');
-  style.textContent = `.ac .ac-trigger::after { display: none !important; }`;
+  style.textContent = `
+    .ac .ac-trigger::after {
+      display: none !important;
+    }
+  `;
   document.head.appendChild(style);
 });
