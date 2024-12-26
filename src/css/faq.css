@@ -1,172 +1,201 @@
 /* Базові стилі для мобільних пристроїв */
-.container {
-    min-width: 320px;
-    margin: 0 auto;
+.faq-section {
+  /* width: 375px; */
+  /* margin: 0 auto; */
+  /* padding: 164px 36px; */
+  /* max-width: 100%; */
+  /* box-sizing: border-box; */
+
+  display: flex;
+  justify-content: center;
+  background-color: #1c1d20;
 }
 
 .faq-container {
-    width: 375px;
-    background-color: #1c1d20;
-    margin: 0 auto;
-    padding: 164px 36px;
-    max-width: 100%;
-    box-sizing: border-box; 
+  /* min-width: 320px; */
+  /* margin: 0 auto; */
 }
 
 /* Контейнер заголовка */
 .faq-title-container {
-    background-color: #1c1d20;
-    margin: 0 auto;
+  background-color: #1c1d20;
+  margin: 0 auto;
 }
 
 /* Заголовок FAQ */
 .faq-title {
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: rgba(250, 250, 250, 0.4);
-    margin-bottom: 32px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
 }
 
 body .ac {
-    background: #1e1e22;
-    border-top: 1px solid #444;
-    border-bottom: 1px solid #444;
-    border-left: none;
-    overflow: hidden;
-    width: 100%; /* Для мобільних ширина 100% */
-    box-sizing: border-box;
-    transition: all 0.3s ease;
+  background: #1e1e22;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  border-left: none;
+  overflow: hidden;
+  width: 100%; /* Для мобільних ширина 100% */
+  box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
 /* Стилі заголовків аккордеона */
 body .ac-header .ac-trigger {
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1.2rem;
-    width: 100%;
-    color: #fff;
-    background-color: #1c1d20;
-    outline: none;
-    cursor: pointer;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1.2rem;
+  width: 100%;
+  color: #fff;
+  background-color: #1c1d20;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
 }
 
-/* Стилі для SVG-стрілки */
+/* Стилі для стрілки */
+body .arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(250, 250, 250, 0.4);
+  border-radius: 100%;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
 body .ac-trigger .ac-icon {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-    border-radius: 50%; 
-    flex-shrink: 0; 
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 body .ac.is-active .ac-trigger .ac-icon {
-    transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 body .ac-trigger {
-    border: none;
+  border: none;
 }
 
 /* Панель аккордеона */
 body .ac-panel {
-    padding: 0 1rem;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
 }
 
 body .ac.is-active .ac-panel {
-    padding: 1rem;
-    min-height: 11rem;
-    overflow: visible;
+  padding: 1rem;
+  min-height: 11rem;
+  overflow: visible;
 }
 
 body .ac-panel p {
-    margin: 0;
-    line-height: 1.6;
+  margin: 0;
+  line-height: 1.6;
 }
 
 body .ac-text {
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #FAFAFA99;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fafafa99;
 }
 
 /* Стилі активного елемента */
 body.ac.is-active {
-    border-color: #444;
+  border-color: #444;
 }
 
 /* Стили для планшетів */
 @media (min-width: 768px) {
-    .faq-container {
-        width: 768px;
-    }
-    .accordion-container {
-        display: block;
-    }
+  .faq-section {
+    /* width: 768px; */
+  }
+  .accordion-container {
+    display: block;
+  }
 
-    .faq-title {
-        font-size: 1.8rem;
-    }
+  .faq-title {
+    font-size: 1.8rem;
+  }
 
-    .ac-header .ac-trigger {
-        font-size: 0.9rem;
-    }
+  .ac-header .ac-trigger {
+    font-size: 0.9rem;
+  }
 }
 
 /* Стили для десктопів */
 @media (min-width: 1440px) {
-    .faq-container {
-        width: 1440px;
-    }
-    .accordion-container {
-        display: flex;
-        flex-wrap: wrap; 
-        justify-content: space-between; 
-    }
+  .faq-section {
+    /* width: 1440px; */
+  }
+  .accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .container {
-        padding: 0 0px;
-    }
+  .faq-container {
+    /* padding: 0 0px; */
+    width: 1440px;
+    height: 640px;
+  }
 
-    .faq-title {
-        font-size: 16px;
-    }
+  .faq-title {
+    font-size: 16px;
+  }
 
-    .ac {
-        flex: 1 1 calc(50% - 2rem); /* Ширина блоку: 50% мінус відступи */
-    }
+  .ac {
+    flex: 1 1 calc(50% - 2rem); /* Ширина блоку: 50% мінус відступи */
+  }
 
-    /* Порядок елементів аккордеона */
-    .ac:nth-child(1) { order: 1; }
-    .ac:nth-child(4) { order: 2; }
-    .ac:nth-child(2) { order: 3; }
-    .ac:nth-child(5) { order: 4; }
-    .ac:nth-child(3) { order: 5; }
-    .ac:nth-child(6) { order: 6; }
+  /* Порядок елементів аккордеона */
+  .ac:nth-child(1) {
+    order: 1;
+  }
+  .ac:nth-child(4) {
+    order: 2;
+  }
+  .ac:nth-child(2) {
+    order: 3;
+  }
+  .ac:nth-child(5) {
+    order: 4;
+  }
+  .ac:nth-child(3) {
+    order: 5;
+  }
+  .ac:nth-child(6) {
+    order: 6;
+  }
 
-    .ac:nth-child(1), .ac:nth-child(2), .ac:nth-child(3) {
-        border-right: 1px solid #444;
-    }
+  .ac:nth-child(1),
+  .ac:nth-child(2),
+  .ac:nth-child(3) {
+    border-right: 1px solid #444;
+  }
 
-    .ac:nth-child(4), .ac:nth-child(5), .ac:nth-child(6) {
-        border-left: 1px solid #444;
-    }
-    .ac:nth-child(4),.ac:nth-child(5),  .ac:nth-child(6) {
-        border-left: 1px solid #444;
-    }
+  .ac:nth-child(4),
+  .ac:nth-child(5),
+  .ac:nth-child(6) {
+    border-left: 1px solid #444;
+  }
+  .ac:nth-child(4),
+  .ac:nth-child(5),
+  .ac:nth-child(6) {
+    border-left: 1px solid #444;
+  }
 }
-
-  
-
