@@ -1,19 +1,25 @@
-.container {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
 .section-hero {
-  width: 375px;
-  height: 812px;
+  /* width: 375px;
+  height: 812px; */
   background-image: url('../img/Hero/bg_hero.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   padding-top: 281px;
   padding-bottom: 32px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+
+  display: flex;
+  justify-content: center;
+  background-color: #1c1d20;
 }
+
+.container {
+  min-width: 320px;
+  /* margin: 0 auto; */
+  padding: 0 16px;
+}
+
 @media (min-resolution: 192dpi) {
   .section-hero {
     background-image: url('../img/Hero/bg_hero2x.png');
@@ -78,8 +84,8 @@
     padding: 0 32px;
   }
   .section-hero {
-    width: 768px;
-    height: 1024px;
+    /* width: 768px;
+    height: 1024px; */
     /* background-image: url('../img/Hero/bg_tab.png'); */
     padding-top: 300px;
   }
@@ -117,11 +123,11 @@
 
 @media (min-width: 1440px) {
   .container {
-    min-width: 1440px;
+    /* min-width: 1440px; */
   }
   .section-hero {
-    width: 1440px;
-    height: 900px;
+    /* width: 1440px;
+    height: 900px; */
     /* background-image: url('../img/Hero/bg_hero.png'); */
   }
   /* @media (min-resolution: 192dpi) {
