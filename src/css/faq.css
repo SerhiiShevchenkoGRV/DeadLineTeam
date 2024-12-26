@@ -43,6 +43,7 @@ body .ac {
   width: 100%; /* Для мобільних ширина 100% */
   box-sizing: border-box;
   transition: all 0.3s ease;
+  margin-top: 0px;
 }
 
 /* Стилі заголовків аккордеона */
@@ -113,7 +114,9 @@ body .ac-panel .ac-text {
   font-size: 16px;
   color: #fafafa99;
 }
-
+body p .ac-text-color{
+  color: #fafafa99;
+}
 /* Стилі активного елемента */
 body.ac.is-active {
   border-color: #444;
