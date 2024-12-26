@@ -265,6 +265,7 @@ footer .container {
     footer .container {
         min-width: 704px;
         margin: 0 auto;
+        padding: 0;
     }
 
     .logo-footer {
