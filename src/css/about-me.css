@@ -1,232 +1,234 @@
-section-about-me {
-    min-width: 320px;
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #1c1d20;
-    font-family: 'Inter Tight', sans-serif;
+.section-about-me {
+  /* min-width: 320px;
+  max-width: 1440px; */
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1c1d20;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 .introduction-about-me {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 1440px;
-    margin: 0 auto 96px;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1440px;
+  margin: 0 auto 96px;
+  padding: 0;
 }
 
 .text-block-about-me {
-    font-family: 'Inter Tight', sans-serif;
-    color: rgba(250, 250, 250, 1);
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.4;
-    letter-spacing: -0.03em;
-    background-color: rgba(36, 37, 39, 1);
-    border-radius: 24px;
-    width: 680px;
-    height: 700px;
-    padding: 64px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    box-sizing: border-box;
+  font-family: 'Inter Tight', sans-serif;
+  color: rgba(250, 250, 250, 1);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+  background-color: rgba(36, 37, 39, 1);
+  border-radius: 24px;
+  width: 680px;
+  height: 700px;
+  padding: 64px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
 }
 
 .image-block-about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 680px;
-    height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 680px;
+  height: 700px;
 }
 
 .image-block-about-me {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+
 }
 
 .about-me {
-    margin-bottom: 96px;
+  margin-bottom: 96px;
 }
 
 .skills-container-about-me {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .swiper-about-me {
-    width: 100%;
+  width: 100%;
 }
 
 .swiper-wrapper-about-me {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .swiper-slide-about-me {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    font-size: 20px;
-    font-weight: 500;
-    background-color: #1c1d20;
-    letter-spacing: -0.02em;
-    border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #1c1d20;
+  letter-spacing: -0.02em;
+  border-radius: 100%;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: white;
+  color: white;
 }
 
 .swiper-button-next-about-me:hover {
-    color: rgba(237, 59, 68, 1);
+  color: rgba(237, 59, 68, 1);
 }
 
 .functional-about-me {
-    color: rgba(237, 59, 68, 1);
+  color: rgba(237, 59, 68, 1);
 }
 
 .websites-about-me {
+
     color: rgba(250, 250, 250, 0.4);
+
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
 }
 
 .about-me-item {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .about-me-click {
-    color: rgba(250, 250, 250, 0.4);
-    padding: 32px;
-    cursor: pointer;
-    line-height: 24px;
-    font-weight: bold;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    letter-spacing: -0.02em;
-    background-color: rgba(28, 29, 32, 0.9);
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+  color: rgba(250, 250, 250, 0.4);
+  padding: 32px;
+  cursor: pointer;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: -0.02em;
+  background-color: rgba(28, 29, 32, 0.9);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .arrow-container-about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border: 2px solid rgba(250, 250, 250, 0.4);
-    border-radius: 100%;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(250, 250, 250, 0.4);
+  border-radius: 100%;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .about-me-click::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: rgba(250, 250, 250, 0.2);
-    transition: opacity 0.3s ease;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(250, 250, 250, 0.2);
+  transition: opacity 0.3s ease;
 }
 
 .about-me-click.open .arrow {
-    transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .arrow-container-about-me:hover {
-    border-color: rgba(250, 250, 250, 0.8);
-    background-color: rgba(250, 250, 250, 0.1);
+  border-color: rgba(250, 250, 250, 0.8);
+  background-color: rgba(250, 250, 250, 0.1);
 }
 
 .arrow-about-me {
-    width: 7px;
-    height: 7px;
-    border: solid rgba(250, 250, 250, 0.8);
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
+  width: 7px;
+  height: 7px;
+  border: solid rgba(250, 250, 250, 0.8);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
 }
 
 .about-me-content {
-    padding: 15px 15px 32px 15px;
-    display: none;
-    background-color: rgba(28, 29, 32, 1);
-    color: rgba(250, 250, 250, 1);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 15px 15px 32px 15px;
+  display: none;
+  background-color: rgba(28, 29, 32, 1);
+  color: rgba(250, 250, 250, 1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 
-    transition: max-height 0.3s ease;
-    max-height: 0;
-    overflow: hidden;
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .about-me-content.open {
-    display: block;
-    padding-bottom: 17px;
-    max-height: 500px;
+  display: block;
+  padding-bottom: 17px;
+  max-height: 500px;
 }
 
 .about-me-content::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: rgba(250, 250, 250, 0.2);
-    margin-top: 15px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(250, 250, 250, 0.2);
+  margin-top: 15px;
 }
 
-ul-about-me {
-    list-style: none;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: left;
+.ul-about-me {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
 }
 
 ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .hidden-heading-about-me {
-    position: absolute;
-    left: -9999px;
-    top: -9999px;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
 }
 
 .bubble-about-me {
-    cursor: pointer;
-    transition: background-color 0.3s;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .about-me-click.open .arrow {
-    transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .accordion-list-about-me {
@@ -273,157 +275,158 @@ ul li {
 
 /* Mobile Responsive */
 @media only screen and (max-width: 767px) {
+  .text-block-about-me,
+  .image-block-about-me {
+    width: 90%;
+    height: auto;
+  }
 
-    .text-block-about-me,
-    .image-block-about-me {
-        width: 90%;
-        height: auto;
-    }
+  .text-block-about-me {
+    padding: 32px;
+  }
 
-    .text-block-about-me {
-        padding: 32px;
-    }
-
-    ul li {
-        font-size: 14px;
-        line-height: 20px;
-    }
+  ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
-
-    ul li {
-        font-size: 16px;
-        line-height: 22px;
-    }
+  ul li {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 1440px) {
-    .about-me-click {
-        font-size: 18px;
-    }
+  .about-me-click {
+    font-size: 18px;
+  }
 
-    .arrow-container-about-me {
-        width: 40px;
-        height: 40px;
-    }
+  .arrow-container-about-me {
+    width: 40px;
+    height: 40px;
+  }
 
-    .arrow-about-me {
-        width: 7px;
-        height: 7px;
-    }
+  .arrow-about-me {
+    width: 7px;
+    height: 7px;
+  }
 
-    .about-me-content {
-        font-size: 18px;
-        padding: 8px 69px 0 696px;
-    }
+  .about-me-content {
+    font-size: 18px;
+    padding: 8px 69px 0 696px;
+  }
 
-    ul li {
-        font-size: 18px;
-        line-height: 26px;
-    }
+  ul li {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
-
 
 /* Основний контейнер для Accordion */
 .accordion-about-me {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #1c1d20;
-    border-radius: 10px;
-    overflow: hidden;
-    font-family: 'Inter Tight', sans-serif;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1c1d20;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 /* Елемент Accordion */
 .item-about-me {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Заголовок Accordion */
 .header-about-me {
-    padding: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: rgba(250, 250, 250, 0.8);
-    background-color: rgba(28, 29, 32, 0.9);
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.3s ease;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(250, 250, 250, 0.8);
+  background-color: rgba(28, 29, 32, 0.9);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .header-about-me:hover {
-    background-color: rgba(28, 29, 32, 1);
+  background-color: rgba(28, 29, 32, 1);
 }
 
 /* Іконка стрілки */
 .header-about-me::after {
-    content: '';
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border: solid rgba(250, 250, 250, 0.8);
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border: solid rgba(250, 250, 250, 0.8);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
 }
 
 /* Відкрита стрілка */
 .item-about-me.open .header-about-me::after {
-    transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 /* Контент Accordion */
 .body-about-me {
-    padding: 20px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.6;
-    color: rgba(250, 250, 250, 0.8);
-    background-color: rgba(36, 37, 39, 1);
-    display: none;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: rgba(250, 250, 250, 0.8);
+  background-color: rgba(36, 37, 39, 1);
+  display: none;
 }
 
 /* Відкритий контент */
 .item-about-me.open .body-about-me {
-    display: block;
+  display: block;
 }
 
 /* Адаптивність */
 @media only screen and (max-width: 767px) {
-    .header-about-me {
-        font-size: 16px;
-        padding: 15px;
-    }
+  .header-about-me {
+    font-size: 16px;
+    padding: 15px;
+  }
 
-    .body-about-me {
-        font-size: 14px;
-    }
+  .body-about-me {
+    font-size: 14px;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .header-about-me {
-        font-size: 17px;
-        padding: 18px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .header-about-me {
+    font-size: 17px;
+    padding: 18px;
+  }
 
-    .body-about-me {
-        font-size: 15px;
-    }
+  .body-about-me {
+    font-size: 15px;
+  }
 }
 
-@media only screen and (min-width: 1024px) {
-    .header-about-me {
-        font-size: 18px;
-        padding: 20px;
-    }
+@media only screen and (min-width: 1440px) {
+  .introduction-about-me {
+    padding-top: 96px;
+  }
 
-    .body-about-me {
-        font-size: 16px;
-    }
+  .header-about-me {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .body-about-me {
+    font-size: 16px;
+  }
 }

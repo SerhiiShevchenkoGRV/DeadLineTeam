@@ -1,0 +1,131 @@
+.covers-section {
+  /* margin: 0 auto; */
+  /* max-width: 1440px; */
+  display: flex;
+  justify-content: center;
+  background-color: #1c1d20;
+}
+
+.content {
+  position: relative;
+  width: 375px;
+  height: 508px;
+  overflow: hidden;
+  margin-bottom: 64px;
+
+  background-image: url(../img/Covers/background/background_bubbles_1x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .content {
+    background-image: url(../img/Covers/background/background_bubbles_2x.webp);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.covers-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pictures-line {
+  display: flex;
+}
+
+.pictures-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  display: flex;
+  transform: rotate(17deg);
+}
+
+.pictures-item {
+  width: 282px;
+  height: 162px;
+
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+.covers-picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+@media screen and (min-width: 320px) {
+  .content {
+    width: 375px;
+    height: 508px;
+    margin-bottom: 96px;
+  }
+}
+
+/* @media screen and (max-width: 767px) {
+  
+} */
+
+@media screen and (min-width: 768px) {
+  .content {
+    width: 768px;
+    height: 960px;
+    margin-bottom: 164px;
+  }
+
+  .covers-gallery {
+    gap: 44px;
+  }
+
+  .pictures-list {
+    gap: 62px;
+  }
+
+  .pictures-item {
+    width: 544px;
+    height: 314px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    width: 1440px;
+    height: 960px;
+  }
+}
