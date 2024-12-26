@@ -290,39 +290,7 @@ footer .container {
         margin-bottom: 18px;
     }
 
-  @media (min-resolution: 192dpi) {
-    .footer-work {
-      background-image: url(../img/Work_together/elements\ 768@x2.png);
-    }
-  }
 
-  footer .container {
-    min-width: 704px;
-    margin: 0 auto;
-  }
-
-  .logo-footer {
-    max-width: 542px;
-    margin-bottom: 64px;
-  }
-
-  .footer-img {
-    border-radius: 24px;
-    width: 70px;
-    height: 70px;
-    margin-right: 20px;
-  }
-
-  .footer-text {
-    font: 500 64px / 1 'Inter Tight', sans-serif;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #fafafa;
-  }
-
-  .footer-form {
-    margin-bottom: 18px;
-  }
 
   .form-subscribe {
     flex-direction: row;
